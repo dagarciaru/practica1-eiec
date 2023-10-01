@@ -13,9 +13,9 @@ DEFAULT_DUPLICATES = False
 def sort_list(items, ascending=True):
     if not isinstance(items, list):
         raise RuntimeError(f"No puede ordenar {type(items)}")
-
     return sorted(items, reverse=(not ascending))
-
+def to_uppercase(items):
+    return [word.upper() for word in items]
 
 def remove_duplicates_from_list(items):
     return list(set(items))
@@ -46,4 +46,4 @@ if __name__ == "__main__":
     if remove_duplicates:
         word_list = remove_duplicates_from_list(word_list)
 
-    print(sort_list(word_list))
+   print (to_uppercase (sort list(word list)))
